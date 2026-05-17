@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Post UTF-8 text to Mastodon from a file. Credentials from .env (see .env.example)."""
+"""Post UTF-8 text to Mastodon from a file.
+
+Credentials load from a dotenv-style file (default: repo root ``.env``); see ``.env.example``.
+No editor-specific tooling is required—run with ``python3`` from a shell or CI.
+"""
 
 from __future__ import annotations
 
