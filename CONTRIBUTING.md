@@ -1,6 +1,12 @@
 # Contributing
 
-Thanks for helping improve **mastodon-agent**. This document is the contributor-facing path: it assumes a normal clone and standard tools—**not** any specific editor or private configuration repository.
+Thanks for helping improve **mastodon-agent**. This document is the contributor-facing path: it assumes a normal clone and standard tools—**not** any private configuration repository.
+
+## Agent-driven development (Cursor)
+
+After cloning, **Cursor** loads root **`AGENTS.md`**. The default working charter is **`docs/AGENT_PROMPT.md`** (open-ended tasks, milestones, constraints). **`.cursor/rules/mastodon-agent.mdc`** keeps those paths in context.
+
+You do **not** need a private config repo to build or run the script; agent files here are **redacted patterns only**.
 
 ## Prerequisites
 
@@ -44,6 +50,10 @@ Personal automation, credentials patterns, or anything unsafe to publish belongs
 - Do not add real tokens, app passwords, client secrets, or committed `.env` files.
 - If you add scripts or CI, ensure a fresh clone can still run documented steps without extra private repos.
 
-## Repo rename note
+## Remote URL
 
-If you cloned this project under an older remote name, update your `origin` URL after the GitHub repository is renamed to **mastodon-agent** (see the README migration section).
+The GitHub repository is **`shahzebqazi/mastodon-agent`**. If `git remote -v` still shows the old name, run:
+
+```bash
+git remote set-url origin git@github.com:shahzebqazi/mastodon-agent.git
+```
