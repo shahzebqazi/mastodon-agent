@@ -51,9 +51,11 @@
             and run <code>python3 scripts/post_status.py …</code> from your terminal or automation.
           </p>
           <p>
-            The goal is to evolve it into a fuller <strong>posting and management</strong> toolkit
-            as you use Mastodon more—drafts, scheduling ideas, media uploads, and admin helpers can
-            layer on over time.
+            Product behavior and roadmap are defined in the tool-agnostic
+            <a href="https://github.com/shahzebqazi/mastodon-agent/blob/main/docs/SPEC.md"><strong>SPEC</strong></a>.
+            Cursor-specific integration lives in the
+            <a href="https://github.com/shahzebqazi/cursor-agents"><strong>cursor-agents</strong></a> monorepo
+            (<code>mastodon-agent-cursor/</code>).
           </p>
         </div>
       </section>
@@ -81,11 +83,12 @@
       <section id="roadmap" aria-labelledby="roadmap-heading">
         <h2 id="roadmap-heading">Where it can go</h2>
         <div class="card">
+          <p>Phased roadmap (posting hardening → drafts → opt-in listen-log/curator): see the
+            <a href="https://github.com/shahzebqazi/mastodon-agent/blob/main/docs/SPEC.md#phases">SPEC</a>.</p>
           <ul class="clean">
-            <li>Draft/review flow (templates, thread splitting)</li>
-            <li>Safe patterns for automation (rate limits, visibility defaults)</li>
-            <li>Optional media upload and alt-text helpers</li>
-            <li>Lightweight bookmarks or moderation notes for power users</li>
+            <li>Dry-run, validation, and clearer API errors</li>
+            <li>Draft/review conventions</li>
+            <li>Opt-in automation with documented consent</li>
           </ul>
         </div>
       </section>
