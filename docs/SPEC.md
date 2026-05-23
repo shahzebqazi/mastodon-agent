@@ -94,7 +94,7 @@ A **small, reliable** foundation for composing and publishing on Mastodon: UTF-8
 | Metric | How |
 |--------|-----|
 | Post success rate | Count 2xx vs 4xx/5xx in operator logs |
-| Secret hygiene | No tokens in git; periodic grep in CI |
+| Secret hygiene | No tokens in git; optional future CI grep for leak patterns |
 | UTF-8 fidelity | Round-trip test with non-ASCII sample draft |
 
 ## Cursor / editor integration

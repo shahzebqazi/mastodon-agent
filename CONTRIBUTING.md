@@ -20,6 +20,8 @@ Copy `.env.example` to `.env` (never commit `.env`):
 | `MASTODON_INSTANCE_URL` | Server base URL only, e.g. `https://example.social` |
 | `MASTODON_ACCESS_TOKEN` | OAuth access token (treat like a password) |
 
+Optional CLI flag: `--env /path/to/.env` if the file is not at the repository root.
+
 ## Verify locally
 
 ```bash
